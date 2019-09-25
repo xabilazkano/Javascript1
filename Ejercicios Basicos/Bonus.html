@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function primo(numeros){
+			let contador = numeros.length;
+			let respuesta="";
+
+			for(let i=0;i<numeros.length;i++){
+
+				for (let e=2;e<numeros[i];e++){
+					if (numeros[i]%e==0) {
+						respuesta=respuesta+ "El numero "+numeros[i]+" no es primo\n"
+						e=numeros[i];
+					}
+
+				}
+
+
+			}
+			return respuesta;
+		}
+	
+
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+		let numeros = [1,20,3,5,6];
+		console.log(primo(numeros));
+	</script>
+</body>
+</html>

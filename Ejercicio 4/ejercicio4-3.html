@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		
+		function iva(precio,tipo){
+
+			switch (tipo){
+
+				case "normal":
+
+				return(precio+precio*0.21);
+				break;
+
+				case "reducido":
+				return(precio+precio*0.10);
+				break;
+
+				default:
+				return("Tipo de iva incorrecto");
+				break;
+
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+		let precio = 5;
+		let tipo = "normal";
+
+		console.log(iva(precio,tipo));
+
+		tipo = "reducido";
+		console.log(iva(precio,tipo));
+
+		tipo = "s";
+		console.log(iva(precio,tipo));
+	</script>
+</body>
+</html>

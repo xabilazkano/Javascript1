@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function divisores(){
+			let primero = parseInt(prompt());
+			let divisores ="Los divisores del numero "+primero+" son ";
+				for(let i=1;i<primero;i++){
+					if(primero%i==0){
+						divisores=divisores+" "+i+", ";
+					}
+				}
+				return divisores;
+
+			
+			
+
+		}
+
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+		console.log(divisores());
+	</script>
+</body>
+</html>

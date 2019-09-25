@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function comparacion(){
+			let primero = parseInt(prompt());
+			let segundo = parseInt(prompt());
+			let tercero = parseInt(prompt());
+
+			if(primero>segundo && primero>tercero){
+				return "El primer numero es el mayor";
+			}
+			else if(segundo>primero && segundo>tercero){
+				return "El segundo numero es el mayor";
+			}
+			else if(tercero>primero && tercero>segundo){
+				return "El tercer numero es el mayor";
+			}
+			else{
+				return "Los numeros son iguales";
+			}
+
+		}
+
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+		console.log(comparacion());
+	</script>
+</body>
+</html>
